@@ -12,20 +12,18 @@ const mocksImages = mockUrls.map((url, index) => ({
 }));
 export default function HomePage() {
   return (
-    <main className="">
-      <div className="-m-2 flex flex-wrap justify-around">
-        {mocksImages.map((image, index) => (
-          <div key={index} className="w-full p-2 sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <div className="aspect-square overflow-hidden">
-              <img
-                src={image.url}
-                alt={image.url}
-                className="h-full w-full object-cover"
-              />
-            </div>
+    <main className="flex flex-wrap">
+      {mocksImages.map((image, index) => (
+        <div key={index} className="w-full p-2 sm:w-1/2 md:w-1/3 lg:w-1/4">
+          <div className="aspect-square overflow-hidden">
+            <img
+              src={image.url}
+              alt={image.url}
+              className="h-full w-full object-cover"
+            />
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </main>
   );
 }
