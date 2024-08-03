@@ -6,3 +6,6 @@
 *::after {
   box-sizing: border-box;
 }
+body {
+  @apply bg-black text-white;
+}
