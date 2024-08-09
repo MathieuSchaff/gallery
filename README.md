@@ -13,6 +13,3 @@
 - [] Delte button (w/Server action)
 - [] Analytics (posthog) 
 - [] Ratelimiting (upstash)
-- []
-- []
-- []
