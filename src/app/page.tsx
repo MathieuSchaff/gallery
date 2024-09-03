@@ -8,22 +8,6 @@ export const dynamic = "force-dynamic";
 export async function Images() {
   const images = await getMyImages();
   return (
-    // <>
-    //   {images.map((image, index) => (
-    //     <div key={index} className="w-full p-2 sm:w-1/2 md:w-1/3 lg:w-1/4">
-    //       <div className="aspect-square overflow-hidden">
-    //         <Image
-    //           src={image.url}
-    //           alt={image.url}
-    //           width={300}
-    //           height={300}
-    //           style={{ objectFit: "cover" }}
-    //           className="h-full w-full object-cover"
-    //         />
-    //       </div>
-    //     </div>
-    //   ))}
-    // </>
     <div className="grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {images.map((image, index) => (
         <div
